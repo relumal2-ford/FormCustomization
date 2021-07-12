@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FordErrorTextInputLayout">
+        <attr name="errorDrawable" format="reference"/>
+        <attr name="errorColor" format="reference"/>
+    </declare-styleable>
+</resources>

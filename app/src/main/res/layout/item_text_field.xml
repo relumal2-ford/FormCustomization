@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ CONFIDENTIAL FORD MOTOR COMPANY
+  ~  This is an unpublished work of authorship, which contains confidential information and/or trade secrets, created in 2021. Ford Motor Company owns all rights to this work and intends to maintain it in confidence to preserve its trade secret status. Ford Motor Company reserves all rights, under the copyright laws of the United States or those of any other country that may have jurisdiction, including the right to protect this work as an unpublished work, in the event of an inadvertent or deliberate unauthorized publication. Use of this work constitutes an agreement to maintain the confidentiality of the work, and to refrain from any reverse engineering, decompilation, or disassembly of this work.
+  ~  Ford Motor Company also reserves its rights under all copyright laws to protect this work as a published work, when appropriate. Those having access to this work may not copy it, use it, modify it, or disclose the information contained in it without the written authorization of Ford Motor Company.
+  ~  Copyright 2021, Ford Motor Company.
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.formcustomization.viewModel.TextFieldItemViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/driver_info_first_name_layout"
+            android:layout_marginTop = "8dp"
+            android:layout_marginStart = "8dp"
+            android:layout_marginEnd = "8dp"
+            style = "@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            app:layout_constraintTop_toTopOf="parent"
+            app:fordErrorText="@{viewModel.data().formField.errorEmitter}"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:id = "@+id/email"
+            android:text = "@={viewModel.data().formField.textWatcher}"
+            android:afterTextChanged = "@{(s) -> viewModel.data().formField.validateField()}"
+            android:hint = "@{viewModel.data().hint}"
+            app:onFocusChange = "@{viewModel.data().formField::onFocusChange}"
+            android:inputType = "@{viewModel.data().inputType}"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

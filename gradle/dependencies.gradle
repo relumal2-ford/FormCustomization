@@ -1,0 +1,302 @@
+
+ext {
+    kotlin_version = '1.3.72'
+    androidxFragmentVersion = "1.1.0-rc01"
+    sqlcipher_version = '3.5.9'
+    room_version = '2.2.5'
+    support_library_version = '1.1.0'
+    support_constraint_layout_version = '1.1.3'
+    support_test_version = '1.1.1'
+    support_uiautomator_version = '2.2.0'
+    support_mutlidex_version = '2.0.0'
+    core_util_version = '1.0.0'
+    legacy_support_version = '1.0.0'
+    card_view_version = '1.0.0'
+    material_library_version = '1.3.0'
+    navigation_version = '2.3.5'
+    google_services_version = '4.3.4'
+    location_service_version = '18.0.0'
+    firebase_core_version = '18.0.0'
+    firebase_messaging_version = '18.0.0'
+    guava_version = '30.0-android'
+    gson_version = '2.8.5'
+    okhttp_version = '4.9.0'
+    retrofit_version = '2.9.0'
+    picasso_downloader = '1.1.0'
+    rxjava2_version = '2.2.1'
+    rx2android_version = '2.1.1'
+    rxidler_version = '0.11.0'
+    dagger_version = '2.30.1'
+    lifecycle_version = '2.1.0'
+    junit_version = '4.13.2'
+    mockito_version = '3.3.3'
+    mockito_android_version = '3.3.3'
+    mockito_inline_version = '3.8.0'
+    mockk_version = '1.10.0'
+    mockk_android_version = '1.10.3-jdk8'
+    assertj_android_version = '1.2.0'
+    assertj_core_version = '1.7.1'
+    espresso_version = '3.3.0'
+    leakcanary_version = '1.5.4'
+    kotlinpoet_version = '1.8.0'
+    lottie_version = '3.7.0'
+    facebook_shimmer_version = '0.1.0'
+    facebook_rebound_version = '0.3.8'
+    jebrains_annotation_version = '19.0.0'
+    smart_device_link_bson_version = '1.2.2'
+    findbugs_annotation_version = '3.0.1'
+    robolectric_version = '3.3.2'
+    beacon_android_version = '2.18'
+    picasso_version = '2.71828'
+    zxing_version = '3.4.1'
+    glide_version = '3.8.0'
+    json_webtoken_version = '0.9.1'
+    coroutine_version = '1.4.3-native-mt'
+    consent_version = '2.0.2'
+    userservice_version = '1.2.8'
+    auth_token_version = '1.0.5'
+    network_util_version = '1.3'
+    recall_version = '1.0.7'
+    message_center_version = '1.2.6'
+    cv_core_version = '1.1.20'
+    guides_version = '1.1.3'
+    expertconnect_version = '6.5.8'
+    build_gradle_plugin_version = '4.0.0'
+    google_vision = '20.1.0'
+    sliding_panel_version = '3.4.0'
+    perfecto_version = '+'
+    dynatrace_version = '8.191.1.1005'
+    sonarqube_version = '3.0'
+    jackson_version = '2.12.3'
+    osb_version = '1.0.12-release'
+    support_browser_version = '1.3.0'
+    sentinel_version = '1.2.0-release'
+    analytics_amplitude_version = '1.0.2-release'
+    analytics_version = '1.0.0-release'
+    exoplayer_version = '2.13.3'
+    core_ktx_version = '1.3.2'
+    babylon_version = '0.3.0'
+    view_pager_version = '1.0.0'
+    bouncy_castle_version = '1.68'
+    trust_kit_version = '1.1.3'
+    liveAssistSdkVersion = '1.3.3'
+    rxdogtag_version = '1.0.1'
+    traceur_version = '2.2.12'
+    skylab_version = '1.1.0'
+    amplitude_version = '2.30.0'
+    json_version = '20210307'
+    github_release_plugin_version = '1.1.1'
+    biometric_version = '1.0.1'
+    aem_plugin_version = '2.3.0'
+
+    androidDependencies = [
+            compile_sdk_version : 29,
+            target_sdk_version : 29,
+            min_sdk_version : 24
+    ]
+
+    commonDependencies = [
+            sqlcipher                   : "net.zetetic:android-database-sqlcipher:${sqlcipher_version}@aar",
+            jetbrains_annotation        : "org.jetbrains:annotations:${jebrains_annotation_version}",
+            lottie                      : "com.airbnb.android:lottie:${lottie_version}",
+            facebook_rebound            : "com.facebook.rebound:rebound:${facebook_rebound_version}",
+            facebook_shimmer            : "com.facebook.shimmer:shimmer:${facebook_shimmer_version}@aar",
+            smart_device_link_bson      : "com.smartdevicelink:bson_java_port:${smart_device_link_bson_version}@aar",
+            picasso                     : "com.squareup.picasso:picasso:${picasso_version}",
+            beacon_android_lib          : "org.altbeacon:android-beacon-library:${beacon_android_version}",
+            zxing_lib                   : "com.google.zxing:core:${zxing_version}",
+            glide_lib                   : "com.github.bumptech.glide:glide:${glide_version}",
+            json_webtoken_lib           : "io.jsonwebtoken:jjwt:${json_webtoken_version}",
+            sliding_panel_lib           : "com.sothree.slidinguppanel:library:${sliding_panel_version}",
+            trust_kit                   : "com.datatheorem.android.trustkit:trustkit:${trust_kit_version}",
+            liveassist_sdk              : "com.cafex:liveassist-android:${liveAssistSdkVersion}",
+            skylab                      : "com.amplitude:skylab-android-client:${skylab_version}",
+            amplitude                   : "com.amplitude:android-sdk:${amplitude_version}"
+    ]
+
+    googleDependencies = [
+            location_services           : "com.google.android.gms:play-services-location:${location_service_version}",
+            firebase_core               : "com.google.firebase:firebase-core:${firebase_core_version}",
+            firebase_messaging          : "com.google.firebase:firebase-messaging:${firebase_messaging_version}",
+            findbugs_annotation         : "com.google.code.findbugs:jsr305:${findbugs_annotation_version}",
+            guava                       : "com.google.guava:guava:${guava_version}",
+            gson                        : "com.google.code.gson:gson:${gson_version}",
+            camera                      : "com.google.android.gms:play-services-vision:${google_vision}",
+            google_services             : "com.google.gms:google-services:${google_services_version}",
+            exoplayer                   : "com.google.android.exoplayer:exoplayer:${exoplayer_version}"
+    ]
+
+    kotlinDependencies = [
+            jdk8_stdlib                 : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlin_version}",
+            stdlib                      : "org.jetbrains.kotlin:kotlin-stdlib:${kotlin_version}",
+            reflect                     : "org.jetbrains.kotlin:kotlin-reflect:${kotlin_version}",
+            coroutines_android          : "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutine_version}",
+            coroutines_core             : "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutine_version}",
+            rx2                         : "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:${coroutine_version}",
+            all_open                    : "org.jetbrains.kotlin:kotlin-allopen:${kotlin_version}",
+            serialization               : "org.jetbrains.kotlin:kotlin-serialization:${kotlin_version}"
+    ]
+
+    fordPluginsDependencies = [
+            github_release_plugin       : "com.ford.plugins:github-release-plugin:${github_release_plugin_version}",
+            aem_plugin                  : "com.fordmps.plugins:aem-gradle-plugin:${aem_plugin_version}"
+    ]
+
+    roomDependencies = [
+            runtime                     : "androidx.room:room-runtime:${room_version}",
+            rxjava                      : "androidx.room:room-rxjava2:${room_version}",
+            compiler                    : "androidx.room:room-compiler:${room_version}",
+            testing                     : "androidx.room:room-testing:${room_version}"
+    ]
+
+    supportDependencies = [
+            appcompat                   : "androidx.appcompat:appcompat:${support_library_version}",
+            supportv4                   : "androidx.legacy:legacy-support-v4:${legacy_support_version}",
+            design                      : "com.google.android.material:material:${material_library_version}",
+            recyclerview                : "androidx.recyclerview:recyclerview:${support_library_version}",
+            swipe_refresh_layout        : "androidx.swiperefreshlayout:swiperefreshlayout:${support_library_version}",
+            cardview                    : "androidx.cardview:cardview:${card_view_version}",
+            fragment                    : "androidx.fragment:fragment:${support_library_version}",
+            constraint_layout           : "androidx.constraintlayout:constraintlayout:${support_constraint_layout_version}",
+            annotation                  : "androidx.annotation:annotation:${support_library_version}",
+            coreutils                   : "androidx.legacy:legacy-support-core-utils:${core_util_version}",
+            testrunner                  : "androidx.test.ext:junit:${support_test_version}",
+            testrules                   : "androidx.test:rules:${support_test_version}",
+            uiautomator                 : "androidx.test.uiautomator:uiautomator:${support_uiautomator_version}",
+            mutlidex                    : "androidx.multidex:multidex:${support_mutlidex_version}",
+            browser                     : "androidx.browser:browser:${support_browser_version}",
+            core                        : "androidx.core:core-ktx:${core_ktx_version}",
+            viewpager2                  : "androidx.viewpager2:viewpager2:${view_pager_version}",
+            preference                  : "androidx.preference:preference:${support_library_version}",
+            biometric                   : "androidx.biometric:biometric:${biometric_version}",
+            preference                  : "androidx.preference:preference:${support_library_version}",
+            fragment_testing            : "androidx.fragment:fragment-testing:${androidxFragmentVersion}"
+
+    ]
+
+    navigationDependencies = [
+            fragment_ktx                : "androidx.navigation:navigation-fragment-ktx:${navigation_version}",
+            ui_ktx                      : "androidx.navigation:navigation-ui-ktx:${navigation_version}",
+            safeargs                    : "androidx.navigation:navigation-safe-args-gradle-plugin:${navigation_version}"
+    ]
+
+    retrofitDependencies = [
+            retrofit_lib                : "com.squareup.retrofit2:retrofit:${retrofit_version}",
+            rxjava2_adapter             : "com.squareup.retrofit2:adapter-rxjava2:${retrofit_version}",
+            gson_convertor              : "com.squareup.retrofit2:converter-gson:${retrofit_version}",
+            simple_xml_convertor        : "com.squareup.retrofit2:converter-simplexml:${retrofit_version}",
+            scalars_convertor           : "com.squareup.retrofit2:converter-scalars:${retrofit_version}",
+            jackson_convertor           : "com.squareup.retrofit2:converter-jackson:${retrofit_version}"
+    ]
+
+    okhttpDependencies = [
+            okhttp_lib                  : "com.squareup.okhttp3:okhttp:${okhttp_version}",
+            url_connection              : "com.squareup.okhttp3:okhttp-urlconnection:${okhttp_version}",
+            logging_interceptor         : "com.squareup.okhttp3:logging-interceptor:${okhttp_version}",
+            mockwebserver               : "com.squareup.okhttp3:mockwebserver:${okhttp_version}",
+            picasso_downloader          : "com.jakewharton.picasso:picasso2-okhttp3-downloader:${picasso_downloader}",
+    ]
+
+    securityDependencies = [
+            babylon_tmc                 : "com.babylon.certificatetransparency:certificatetransparency-android:${babylon_version}"
+    ]
+
+    rxjavaDependencies = [
+            rxjava2_lib                 : "io.reactivex.rxjava2:rxjava:${rxjava2_version}",
+            rx2_android                 : "io.reactivex.rxjava2:rxandroid:${rx2android_version}",
+            rx2_idler                   : "com.squareup.rx.idler:rx2-idler:${rxidler_version}",
+            rx_dog_tag                  : "com.uber.rxdogtag:rxdogtag:${rxdogtag_version}"
+    ]
+    daggerDependencies = [
+            dagger_lib                  : "com.google.dagger:dagger:${dagger_version}",
+            compiler                    : "com.google.dagger:dagger-compiler:${dagger_version}",
+            android                     : "com.google.dagger:dagger-android:${dagger_version}",
+            support                     : "com.google.dagger:dagger-android-support:${dagger_version}",
+            processor                   : "com.google.dagger:dagger-android-processor:${dagger_version}"
+    ]
+
+    lifecycleDependencies = [
+            extensions                  : "androidx.lifecycle:lifecycle-extensions:${lifecycle_version}",
+            livedata                    : "androidx.lifecycle:lifecycle-livedata:${lifecycle_version}",
+            runtime                     : "androidx.lifecycle:lifecycle-runtime:${lifecycle_version}",
+            core_testing                : "androidx.arch.core:core-testing:${lifecycle_version}"
+    ]
+
+    junitDependencies = [
+            junit_lib                   : "junit:junit:${junit_version}",
+            mockito_core                : "org.mockito:mockito-core:${mockito_version}",
+            mockito_android             : "org.mockito:mockito-android:${mockito_android_version}",
+            mockito_inline              : "org.mockito:mockito-inline:${mockito_inline_version}",
+            assertj_android             : "com.squareup.assertj:assertj-android:${assertj_android_version}",
+            assertj_core                : "org.assertj:assertj-core:${assertj_core_version}",
+            robolectric                 : "org.robolectric:robolectric:${robolectric_version}",
+            robolectric_resources       : "org.robolectric:robolectric-resources:${robolectric_version}",
+            robolectric_play_services   : "org.robolectric:shadows-play-services:${robolectric_version}",
+            robolectric_shadows_core    : "org.robolectric:shadows-core:${robolectric_version}",
+            mockk                       : "io.mockk:mockk:${mockk_version}",
+            mockk_android               : "io.mockk:mockk-android:${mockk_android_version}"
+    ]
+
+    espressoDependencies = [
+            core                        : "androidx.test.espresso:espresso-core:${espresso_version}",
+            contrib                     : "androidx.test.espresso:espresso-contrib:${espresso_version}",
+            intents                     : "androidx.test.espresso:espresso-intents:${espresso_version}",
+            accessibility               : "androidx.test.espresso:espresso-accessibility:${espresso_version}"
+    ]
+
+    leakcanaryDependencies = [
+            debug                       : "com.squareup.leakcanary:leakcanary-android:${leakcanary_version}",
+            release                     : "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanary_version}",
+            release_unsigned            : "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanary_version}",
+            android_test                : "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanary_version}"
+    ]
+
+    kotlinpoetDependencies = [
+            kotlinpoet                  : "com.squareup:kotlinpoet:${kotlinpoet_version}"
+    ]
+
+    jsonDependencies = [
+            json                        : "org.json:json:${json_version}"
+    ]
+
+    jacksonDependencies = [
+            core                      : "com.fasterxml.jackson.core:jackson-core:${jackson_version}",
+            dataformat_xml            : "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${jackson_version}"
+    ]
+
+    moduleDependencies = [
+            consent                     : "../powertrain/consent/libs/consent-${consent_version}.jar",
+            auth_token                  : "../powertrain/customer-auth/libs/auth-token-management-${auth_token_version}.jar",
+            userservice                 : "libs/user-service-${userservice_version}.jar",
+            network_util                : "libs/network-utils-${network_util_version}.jar",
+            recall_fsa                  : "repositories/repo-recall-fsa/libs/recall-fsa-${recall_version}.jar",
+            message_center              : "../powertrain/ngsdn-messages/libs/message-center-${message_center_version}.jar",
+            guides                      : "../powertrain/guides-module/libs/guides-${guides_version}.aar",
+            expertconnect               : "../powertrain/guides-module/libs/expertconnect-${expertconnect_version}.aar",
+            cv_core                     : "../libraries/cv-core/libs/cv-core-${cv_core_version}.jar",
+            osb                         : "com.ford:osb-fp:${osb_version}",
+            sentinel                    : "com.ford:sentinel:${sentinel_version}",
+            analytics                   : "com.ford:analytics:${analytics_version}",
+            analytics_amplitude         : "com.ford:analytics-amplitude:${analytics_amplitude_version}",
+            analytics_core              : "com.ford:analytics-core:${analytics_version}",
+    ]
+
+    gradleDependencies = [
+            gradle_plugin               : "com.android.tools.build:gradle:${build_gradle_plugin_version}",
+            kotlin_plugin               : "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}",
+            perfecto_plugin             : "com.perfectomobile.instrumentedtest.gradleplugin:plugin:${perfecto_version}",
+            sonarqube_plugin            : "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:${sonarqube_version}"
+    ]
+
+    dynatraceDependencies = [
+            gradle_plugin            : "com.dynatrace.tools.android:gradle-plugin:${dynatrace_version}"
+    ]
+
+    lintGradleDependencies = [
+            bouncy_castle               : "org.bouncycastle:bcprov-jdk15on:${bouncy_castle_version}"
+    ]
+
+    traceurDependencies = [
+            traceur                     : "com.github.qoqa:Traceur:${traceur_version}"
+    ]
+}

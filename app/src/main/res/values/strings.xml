@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FormCustomization</string>
+    <string name="move_fnol_reserve_vehicle_header_title_text" formatted="true">RESERVE A VEHICLE</string>
+
+    <string name="email_number_empty_error">enter a valid email</string>
+    <string name="phone_number_empty_error">enter a valid phone number</string>
+    <string name="last_name_empty_error">last name should not be empty</string>
+    <string name="first_name_empty_error">first name should not be empty</string>
+    <string name="empty_error">field should not be empty</string>
+
+
+    <string name="first_name_hint">firstName</string>
+    <string name="last_name_hint">lastName</string>
+    <string name="email_hint">email</string>
+    <string name="phont_number_hint">phoneNumber</string>
+
+
+</resources>
